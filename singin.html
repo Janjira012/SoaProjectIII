@@ -1,0 +1,117 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>Online Shopping Website</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  
+    <!-- Custom styles for this template -->
+    <link href="css/shop-homepage.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/cursor.css">
+    <link rel="stylesheet" href="css/app.css">
+   
+  </head>
+  <body background="https://www.verdict.co.uk/wp-content/uploads/2017/06/shopping-1440x719.jpg">
+      <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+          <div class="container">
+            
+          
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+              <ul class="navbar-nav ml-auto">
+                <li class="nav-item active">
+                  <a class="nav-link" href="index.html">Home
+                    <span class="sr-only">(current)</span>
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="addnew.html">Add New Pin</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="singin.html">Sing in</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="singup.html">Sing up</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+    
+        <center> <div class="container">
+            <div class="row">
+                    <center>
+                    <h1 style="color:rgb(241, 241, 241);font-weight:bold">
+                        <center>&nbsp;&nbsp;&nbsp;<i>WELCOME to Online Shopping Website<br></center>
+                        </i>
+                    </h1>
+
+                <div class="col-md-8 col-md-offset-2">
+
+
+                        <div class="container">
+                            <form id="form" class="form-horizontal" action="" method="POST" role="form">
+                                <div class="form-group">
+                                    <div class="col-md-6">
+                                    <label for="name" class="col-md-1 control-label" style="color:rgb(248, 245, 245);font-weight:bold">Email</label>
+                                        <input type="text" class="form-control" id="name" name="name" placeholder="Please enter your name." maxlength="25" autofocus>
+                                        </div>
+                                    <br>
+                                </div>
+                                <div class="form-group">
+                                    <div class="col-md-6">
+                                    <label for="password" class="col-md-1 control-label" style="color:rgb(248, 245, 245);font-weight:bold">Password</label>
+
+                                        <input type="password" class="form-control" id="password" name="password" placeholder="Please enter a password here." maxlength="12">
+                                    </div>
+                                    <br><br>
+                                </div>
+                            
+                                <div class="form-group">
+                                    <div class="col-md-6 col-md-offset-2">
+                                            <a href="#">
+                                                <button type="button" id="signin" name="button"  class="float-left submit-button">
+                                            Login</button></a> 
+                                                <span style="color:rgb(14, 11, 197);font-weight:bold" >OR Back to</span>&nbsp;
+                                                <a href="signup.html"><button type="button" class="btn btn-success badge">Sign Up</button></a>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+
+
+
+                    <div id="err" style="display:none" class="alert alert-danger alert-dismissable fade in">
+                        <a href="#" class="close" data-dismiss="alert" aria-label="close">x</a>
+                        <strong>incorrect email or password please try again</strong><br>
+                        <span style="color:rgb(219, 241, 20);font-weight:bold" id="summary"></span>
+                    </div>
+                    <div id="suc" style="display:none" class="alert alert-success alert-dismissable fade in">
+                        <a href="#" class="close" data-dismiss="alert" aria-label="close">x</a>
+                        <strong>login successfully</strong>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+   </center>
+  
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src="js/singin.js"></script>
+    <script type="text/javascript">
+        function create() {
+            $.cookie('keep', 'username');
+            console.log($.cookie('keep'));
+        }
+    </script>
+</body>
+</html>
