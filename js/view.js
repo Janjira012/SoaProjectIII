@@ -52,7 +52,7 @@ $(document).ready(function(){
     }
 $("#btnAddToCart").click(function() {
     localStorage.setItem("quan'", $("#quantity").val());
-    window.location="patment.html";
+    window.location="payment.html";
     
   
 });
